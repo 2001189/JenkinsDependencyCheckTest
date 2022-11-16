@@ -9,7 +9,7 @@ pipeline {
 
 		stage('OWASP DependencyCheck') {
 			steps {
-				dependencyCheck additionalArguments: '--format HTML --format XML --suppressor suppression.xml', odcInstallation: 'Default'
+				dependencyCheck additionalArguments: '--format HTML --format XML --suppresson suppression.xml', odcInstallation: 'Default'
 			}
 		}
 	}	
